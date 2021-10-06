@@ -47,7 +47,63 @@
           </div>
         </div>
       </nav>
-      <div class="container"></div>
+      <div class="container my-4">
+          <h2 class="text-center">ToDos List</h2>
+          <form>
+            <div class="mb-3">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Add an item to the list</div>
+            </div>
+            <!-- <div class="mb-3">
+              <label for="Description">Description</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div> -->
+            <div class="mb-3">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+              </div>
+              
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <!-- this is the imp point to id= add this is related to event -->
+            <button type="submit" id="add" class="btn btn-primary">Add to list</button>
+          </form>
+          <div id="items" class = "my-4">
+              <h2>Your Items</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Description</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Get me the Gold</td>
+                    <td>You need gold in return of bitcoin</td>
+                    <td><button class="btn btn-primary">Delete</button></td>
+                     </tr>
+                  
+                    <!-- <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td> -->
+                 
+                </tbody>
+              </table>
+          </div>
+      </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
